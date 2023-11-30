@@ -110,6 +110,7 @@ nav a {
 .img-profile {
     width: 300px;
     border-radius: 50%;
+    align-self:center;
 }
 .img-caption {
    text-align: center;
@@ -130,19 +131,22 @@ nav a {
     max-width: 900px;
     margin: 0 auto;
     height: auto;
-    justify-content:space-between;
+    justify-content:space-around;
     flex-wrap: wrap;
+     
 }
 .skill {
     background-color: #f1f6f9;
     color: blueviolet;
     border-radius: .5rem;
-    padding: 5px 10px;
+    padding: 10px 10px;
+    border: 2px solid blue;
+    box-sizing: border-box;
 }
 
 .projects-container {
     display: flex;
-    background-color: #afa6cd;
+    background-color: #8d7ac8;
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
@@ -157,10 +161,13 @@ nav a {
     height: 50px;
 }
 .project-item {
+    background-color: #9cabb1;
     display:flex;
     width:250px;
     justify-content: space-between;
     padding: 5px;
+    border: 2px solid blue;
+    border-radius: .5rem;
 }
 .project-text {
     font-family: Arial, Helvetica, sans-serif;
@@ -177,9 +184,7 @@ justify-content: center;}
 @media (max-width: 740px) {
     .about-me-container {
       flex-direction: column;
-      justify-content: center;
-      margin: auto;
-      height: auto;
+      align-items: center;
     }
 
   }
